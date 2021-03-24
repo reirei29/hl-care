@@ -15,7 +15,6 @@ body {
     font-family: $base-font;
     color: $color-base;
     line-height: 1.33;
-    overflow: unset;
 }
 
 a {
@@ -56,4 +55,9 @@ ul {
 
 .page-main {
     padding-left: 250px;
+    overflow-x: hidden;
+
+    @media (max-width: 1199px) {
+        padding-left: 0;
+    }
 }
