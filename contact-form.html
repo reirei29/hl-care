@@ -1,0 +1,228 @@
+<!-- HTMLコード -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <title>お問い合わせ | Heart Life Care</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- javascript -->
+    <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
+</head>
+<body class="page-contact">
+	<header id="header" class="page-header">
+		<div class="header-inner">
+			<a href="./index.html" class="logo"><img src="./assets/images/logo.png" class="dp-logo" alt="" /><img src="./assets/images/logo_SP.png" class="sp-logo" alt="" /></a>
+			<a href="javascript:void(0)" class="nav-burger"><span></span></a>
+			<nav class="navigation">
+				<ul>
+					<li>
+						<a href="#"><i class="menu-thumb"><img src="./assets/images/menu01.png" alt="" /></i><span>わたしたちのこと</span></a>
+						<ul>
+							<li><a href="#"><span>経営理念</span></a></li>
+							<li><a href="#"><span>社長 &amp; 専務インタビュー</span></a></li>
+							<li><a href="#"><span>会社概要</span></a></li>
+							<li><a href="#"><span>沿革</span></a></li>
+						</ul>
+						<div class="subnav-opener"><i class="fa fa-chevron-down"></i></div>
+					</li>
+					<li>
+						<a href="#"><i class="menu-thumb"><img src="./assets/images/menu02.png" alt="" /></i><span>お知らせ</span></a>
+					</li>
+					<li>
+						<a href="./information.html"><i class="menu-thumb"><img src="./assets/images/menu03.png" alt="" /></i><span>施設のご紹介</span></a>
+						<ul>
+							<li><a href="./information-1.html"><em>平塚市</em><span>悠悠倶楽部</span></a></li>
+							<li><a href="./information-2.html"><em>平塚市</em><span>グループホーム悠悠苑</span></a></li>
+							<li><a href="./information-3.html"><em>平塚市</em><span>悠悠みらい</span></a></li>
+							<li><a href="./information-4.html"><em>平塚市</em><span>ケアプラン悠悠苑</span></a></li>
+							<li><a href="./information-5.html"><em>町田市</em><span>デイサービスゆらり</span></a></li>
+							<li><a href="./information-6.html"><em>相模原市</em><span>グループホームゆらり相模原</span></a></li>
+							<li><a href="./information-7.html"><em>大和市</em><span>高齢者地域密着型サービス施設ゆらり</span></a></li>
+							<li><a href="./information-8.html"><em>八王子市</em><span>グループホームゆらり並木</span></a></li>
+						</ul>
+						<div class="subnav-opener"><i class="fa fa-chevron-down"></i></div>
+					</li>
+					<li>
+						<a href="#"><i class="menu-thumb"><img src="./assets/images/menu04.png" alt="" /></i><span>求⼈情報<img src="./assets/images/menu04_2.png" alt="" /></span></a>
+					</li>
+					<li>
+						<a href="./contact-form.html"><i class="menu-thumb"><img src="./assets/images/menu05.png" alt="" /></i><span>お問い合わせ</span></a>
+					</li>
+				</ul>
+			</nav>
+			<div class="social-links">
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-facebook"></i></a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="overlay"></div>
+
+	<div class="page-main">
+		<div class="page-top">
+			<div class="sec-container">
+				<h2 class="page-title"><span>CONTACT</span><em>資料請求・お問い合わせ</em></h2>
+			</div>
+			<div class="quick-nav">
+				<a href="#" class="nav-info"><i class="menu-thumb"><img src="./assets/images/menu04.png" alt="" /></i><span>求⼈情報</span><img src="./assets/images/menu04_2.png" alt="" /></a>
+				<a href="#" class="nav-status"><span>空室・利用状況</span><i class="fa fa-chevron-right"></i></a>
+			</div>
+			<div class="breadcrumb">
+				<div class="sec-container">
+					<ul>
+						<li><a href="index.html">トップ</a></li>
+						<li><span>お問い合わせ</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-wrapper">
+			<div class="sec-contact-form">
+				<div class="sec-container">
+					<h3 class="contact-form-title"><span>資料請求・お問い合わせ</span></h3>
+					<h4 class="contact-form-subtitle"><span>個人情報の取り扱いについて</span></h4>
+					<p>弊社は、ご提供いただいた情報を、不適切な対応が行われないよう、厳正な管理の下で安全に保管致します。</p>
+					<p>尚、弊社が求める情報を正確にご提供がいただけない場合、その後の連絡等に影響がありますことをご了承ください。<br>※送信前に必ず「<a href="#">プライバシーポリシー</a>」をお読みください。</p>
+					<form id="contact_us_form" name="form-contact-us" action="#" method="post">
+						<fieldset>
+							<div class="input-text">
+								<label class="input-text-label" for="field-contact-name"><span>お名前</span></label>
+								<input type="text" class="input-text-input" name="contact-name" id="field-contact-name" />
+							</div>
+							<div class="input-text">
+								<label class="input-text-label" for="field-contact-gana"><span>ふりがな</span></label>
+								<input type="text" class="input-text-input" name="contact-gana" id="field-contact-gana" />
+							</div>
+							<div class="input-text">
+								<label class="input-text-label" for="field-contact-age"><span>年齢</span></label>
+								<input type="text" class="input-text-input" name="contact-age" id="field-contact-age" />
+								<span class="input-text-after-label">歳</span>
+							</div>
+							<div class="input-text">
+								<label class="input-text-label"><span>性別</span></label>
+								<label class="input-radio">
+									<input type="radio" name="contact-sex" id="field-contact-sex-1" value="男性" />
+									<span>男性</span>
+								</label>
+								<label class="input-radio">
+									<input type="radio" name="contact-sex" id="field-contact-sex-2" value="男性" />
+									<span>女性</span>
+								</label>
+							</div>
+							<div class="input-text">
+								<label class="input-text-label" for="field-contact-postnum"><span>郵便番号</span></label>
+								<input type="text" class="input-text-input" name="contact-postnum" id="field-contact-postnum" />
+								<span class="input-text-after-label"><a href="#"><span>郵便番号を調べる</span><img src="./assets/images/menu04_2.png" alt="" /></a></span>
+							</div>
+							<div class="input-text">
+								<label class="input-text-label flex-align-start"><span>ご住所</span></label>
+								<div class="input-text-group">
+									<div class="input-text">
+										<label class="input-text-label" for="field-contact-address-1"><span>都道府県</span></label>
+										<input type="text" class="input-text-input" name="contact-address-1" id="field-contact-address-1" />
+									</div>
+									<div class="input-text">
+										<label class="input-text-label" for="field-contact-address-2"><span>市区町村</span></label>
+										<input type="text" class="input-text-input" name="contact-address-2" id="field-contact-address-2" />
+									</div>
+									<div class="input-text">
+										<label class="input-text-label" for="field-contact-address-3"><span>丁目・番地</span></label>
+										<input type="text" class="input-text-input" name="contact-address-3" id="field-contact-address-3" />
+									</div>
+								</div>
+							</div>
+							<div class="input-text">
+								<label class="input-text-label" for="field-contact-email"><span>メールアドレス</span></label>
+								<input type="text" class="input-text-input" name="contact-email" id="field-contact-email" />
+							</div>
+							<div class="input-text">
+								<label class="input-text-label" for="field-contact-email-c"><span>メールアドレス<br>（確認用）</span></label>
+								<input type="text" class="input-text-input" name="contact-email-c" id="field-contact-email-c" />
+							</div>
+							<div class="input-text">
+								<label class="input-text-label"><span>資料請求</span></label>
+								<label class="input-radio">
+									<input type="radio" name="contact-data-req" id="field-contact-data-req" value="請求する" />
+									<span>請求する</span>
+								</label>
+								<label class="input-radio">
+									<input type="radio" name="contact-data-req" id="field-contact-data-req" value="請求しない" />
+									<span>請求しない</span>
+								</label>
+							</div>
+							<div class="input-text input-textarea">
+								<label class="input-text-label flex-align-start" for="field-contact-message"><span>お問い合わせ</span></label>
+								<textarea name="contact-message" id="field-contact-message"></textarea>
+							</div>
+							<div class="btn-container">
+								<a href="./contact-confirm.html" class="button"><span>内容を確認する</span></a>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="sec-banner-go">
+			<div class="sec-container">
+				<div class="row gutter-20">
+					<div class="col-md-6">
+						<h4><em></em><span>資格取得もサポート！</span></h4>
+						<figure>
+							<a href="#">
+								<img src="./assets/images/go_support.png" alt="" />
+							</a>
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<h4><em></em><span>社長&amp;専務インタビュー</span></h4>
+						<figure>
+							<a href="#">
+								<img src="./assets/images/go_interview.png" alt="" />
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec-ads">
+			<div class="sec-container">
+				<figure>
+					<a href="#"><img src="./assets/images/top_ads.png" alt="" /></a>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<div id="to-top" class="to-move-btn"><i class="fa fa-arrow-up"></i></div>
+
+	<footer id="footer" class="page-footer">
+		<div class="footer-inner">
+			<div class="row align-items-center">
+				<div class="col-md-auto">
+					<a href="#" class="footer-logo"><img src="./assets/images/footer_logo.png" alt="" /></a>
+				</div>
+				<div class="col-md-auto">
+					<a href="#" class="footer-link"><span>プライバシーポリシー</span></a>
+				</div>
+				<div class="col-md text-md-center">
+					<div class="copyright ff-segoeui">Copyright © Heart Life Care</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./libs/wipeslider/jquery.wipeSlider.js"></script>
+	<script src="./assets/js/top-wipe.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -33,3 +33,253 @@
     visibility: hidden;
     transition: all .5s ease;
 }
+
+.page-title {
+	font-size: 36px;
+	line-height: 1.6;
+	padding-bottom: 25px;
+	position: relative;
+	margin-bottom: 80px;
+	font-weight: 700;
+	text-align: center;
+
+	> em {
+		font-size: 0.5em;
+		display: block;
+	}
+
+	> small {
+		font-size: .6em;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		width: 50px;
+		height: 5px;
+		background-color: #ff6298;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+	}
+
+	@media (max-width: 991px) {
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 767px) {
+		font-size: 24px;
+		text-align: center;
+
+		&:before {
+			width: 36px;
+			height: 3px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.page-subtitle {
+	font-size: 20px;
+	text-align: center;
+
+	@media (max-width: 767px) {
+		font-size: 14px;
+	}
+}
+
+.page-top {
+	padding-top: 80px;
+
+	@media (max-width: 991px) {
+		display: flex;
+		flex-direction: column;
+		padding-top: 0;
+
+		.breadcrumb {
+			order: -1;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.breadcrumb {
+    background-color: #eeefe7;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 700;
+    border-radius: 0;
+    margin: 0;
+    padding: 8px 0;
+
+    ul {
+    	li {
+    		display: inline-block;
+    		vertical-align: middle;
+
+    		&:not(:first-child):before {
+    			content: '';
+    			display: inline-block;
+    			vertical-align: middle;
+    			width: 17.5px;
+    			height: 1px;
+    			border-top: 1px solid #999;
+    			transform: rotate(-45deg);
+    			margin: 0 10px;
+    		}
+
+    		span, a {
+    			display: inline-block;
+    			vertical-align: middle;
+    		}
+
+    		a:not(:hover) {
+    			color: #999;
+    		}
+    	}
+    }
+}
+
+fieldset {
+	.input-text {
+		display: flex;
+		align-items: center;
+		min-height: 80px;
+		border-bottom: 1px solid #e7ebef;
+
+		@media (max-width: 991px) {
+			min-height: 0;
+			flex-wrap: wrap;
+		}
+
+		.input-text-label {
+			min-width: 255px;
+			font-size: 18px;
+			font-weight: 700;
+			margin: 0;
+
+			@media (max-width: 991px) {
+				font-size: 12px;
+				min-width: 0;
+				display: block;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				flex: 0 0 100%;
+			}
+
+			&.flex-align-start {
+				align-self: flex-start;
+				margin-top: 30px;
+
+				@media (max-width: 991px) {
+					margin-top: 10px;
+				}
+			}
+		}
+
+		.input-text-data {
+			font-size: 18px;
+
+			@media (max-width: 991px) {
+				font-size: 12px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+
+		.input-text-input {
+			font-size: 18px;
+			background-color: #f6f7f2;
+			border: 0;
+			display: block;
+			flex: auto;
+			height: 50px;
+			line-height: 50px;
+			padding: 0 20px;
+
+			@media (max-width: 991px) {
+				font-size: 12px;
+				margin-bottom: 10px;
+				line-height: 35px;
+				height: 35px;
+			}
+		}
+
+		.input-text-group {
+			flex: auto;
+			padding: 10px 0;
+
+			@media (max-width: 991px) {
+				padding: 0;
+			}
+
+			.input-text {
+				min-height: 60px;
+				border: 0;
+
+				@media (max-width: 991px) {
+					min-height: 0;
+				}
+
+				.input-text-label {
+					min-width: 125px;
+					font-weight: 400;
+
+					@media (max-width: 991px) {
+						min-width: 0;
+					}
+				}
+			}
+		}
+
+		.input-text-after-label {
+		    display: block;
+		    text-align: center;
+		    align-items: center;
+		    justify-content: center;
+		    padding: 0 20px;
+
+		    @media (max-width: 991px) {
+		    	margin-bottom: 10px;
+		    	font-size: 12px;
+		    }
+
+		    img {
+		    	display: inline-block;
+		    	margin-left: 5px;
+		    }
+
+		    a {
+		    	text-decoration: underline !important;
+		    }
+		}
+
+		.input-radio {
+			display: inline-block;
+		    margin-right: 40px;
+		    font-size: 18px;
+
+		    @media (max-width: 991px) {
+		    	font-size: 12px;
+		    }
+		}
+
+		textarea {
+			flex: auto;
+		    border: 0;
+		    background-color: #f6f7f2;
+		    min-height: 235px;
+		    margin: 15px 0;
+
+		    @media (max-width: 991px) {
+		    	margin: 0 0 10px;
+		    }
+		}
+	}
+}
+
+.gray-bg {
+	background-color: #f7f7f7;
+}

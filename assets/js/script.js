@@ -61,6 +61,20 @@ jQuery(function($){
                 $(this).parent().addClass("active");
                 $(this).parent().children("ul").slideDown();
             }
-        })
+        });
+
+        if($(".owl-image-carousel").length) {
+            $(".owl-image-carousel").owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: true,
+                navRewind: true,
+                loop: true,
+                nav: true,
+                navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+            });
+        }
     });
 });
