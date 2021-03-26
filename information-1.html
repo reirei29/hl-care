@@ -27,17 +27,17 @@
 			<nav class="navigation">
 				<ul>
 					<li>
-						<a href="#"><i class="menu-thumb"><img src="./assets/images/menu01.png" alt="" /></i><span>わたしたちのこと</span></a>
+						<a href="./about-us.html"><i class="menu-thumb"><img src="./assets/images/menu01.png" alt="" /></i><span>わたしたちのこと</span></a>
 						<ul>
-							<li><a href="#"><span>経営理念</span></a></li>
-							<li><a href="#"><span>社長 &amp; 専務インタビュー</span></a></li>
-							<li><a href="#"><span>会社概要</span></a></li>
-							<li><a href="#"><span>沿革</span></a></li>
+							<li><a href="./policy.html"><span>経営理念</span></a></li>
+							<li><a href="./voice.html"><span>社長 &amp; 専務インタビュー</span></a></li>
+							<li><a href="./company-profile.html"><span>会社概要</span></a></li>
+							<li><a href="./history.html"><span>沿革</span></a></li>
 						</ul>
 						<div class="subnav-opener"><i class="fa fa-chevron-down"></i></div>
 					</li>
 					<li>
-						<a href="#"><i class="menu-thumb"><img src="./assets/images/menu02.png" alt="" /></i><span>お知らせ</span></a>
+						<a href="./news.html"><i class="menu-thumb"><img src="./assets/images/menu02.png" alt="" /></i><span>お知らせ</span></a>
 					</li>
 					<li>
 						<a href="./information.html"><i class="menu-thumb"><img src="./assets/images/menu03.png" alt="" /></i><span>施設のご紹介</span></a>
@@ -62,8 +62,8 @@
 				</ul>
 			</nav>
 			<div class="social-links">
-				<a href="#"><i class="fab fa-instagram"></i></a>
-				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+				<a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
 			</div>
 		</div>
 	</header>
@@ -74,7 +74,41 @@
 		<div class="quick-nav">
 			<a href="#" class="nav-info"><i class="menu-thumb"><img src="./assets/images/menu04.png" alt="" /></i><span>求⼈情報</span><img src="./assets/images/menu04_2.png" alt="" /></a>
 			<a href="./contact-form.html" class="nav-contact"><i class="menu-thumb"><img src="./assets/images/menu05.png" alt="" /></i><span>お問い合わせ</span></a>
-			<a href="#" class="nav-status"><span>空室・利用状況</span><i class="fa fa-chevron-right"></i></a>
+			<div class="usage-status">
+				<h3><span>利用状況</span><i class="fa fa-chevron-up"></i></h3>
+				<div class="usage-content">
+					<div class="availability-item">
+						<div class="item-title">
+							<h3><span>悠悠倶楽部（デイサービス）</span></h3>
+						</div>
+						<div class="item-schedule">
+							<table>
+								<tr>
+									<td><span>月</span></td>
+									<td><span>火</span></td>
+									<td><span>水</span></td>
+									<td><span>木</span></td>
+									<td><span>金</span></td>
+									<td><span>土</span></td>
+								</tr>
+								<tr class="ff-segoeui">
+									<td><span>×</span></td>
+									<td><span>○</span></td>
+									<td><span>△</span></td>
+									<td><span>○</span></td>
+									<td><span>△</span></td>
+									<td><span>△</span></td>
+								</tr>
+							</table>
+							<div class="schedule-explain">
+								<span><span class="ff-segoeui">○</span>&nbsp;<span>…空きあり</span></span>
+								<span><span class="ff-segoeui">△</span>&nbsp;<span>…残りわずか</span></span>
+								<span><span class="ff-segoeui">×</span>&nbsp;<span>…空きなし</span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="sec-information-detail">
 			<div class="gray-bg">
@@ -90,7 +124,7 @@
 						<li><a href="#detail3"><span>ご利用案内</span><i class="fa fa-chevron-down"></i></a></li>
 						<li><a href="#detail4"><span>交通案内</span><i class="fa fa-chevron-down"></i></a></li>
 					</ul>
-					<div id="#detail1">
+					<div id="detail1" class="detail-info">
 						<h3 class="detail-title"><span>施設紹介</span></h3>
 						<div class="row no-gutters">
 							<div class="col-lg-8">
@@ -114,30 +148,30 @@
 								<div class="availability-item">
 									<div class="item-title">
 										<h3><span>利用状況</span></h3>
-										<div class="item-schedule">
-											<table>
-												<tr>
-													<td><span>月</span></td>
-													<td><span>火</span></td>
-													<td><span>水</span></td>
-													<td><span>木</span></td>
-													<td><span>金</span></td>
-													<td><span>土</span></td>
-												</tr>
-												<tr class="ff-segoeui">
-													<td><span>×</span></td>
-													<td><span>○</span></td>
-													<td><span>△</span></td>
-													<td><span>○</span></td>
-													<td><span>△</span></td>
-													<td><span>△</span></td>
-												</tr>
-											</table>
-											<div class="schedule-explain">
-												<span><span class="ff-segoeui">○</span>&nbsp;<span>…空きあり</span></span>
-												<span><span class="ff-segoeui">△</span>&nbsp;<span>…残りわずか</span></span>
-												<span><span class="ff-segoeui">×</span>&nbsp;<span>…空きなし</span></span>
-											</div>
+									</div>
+									<div class="item-schedule">
+										<table>
+											<tr>
+												<td><span>月</span></td>
+												<td><span>火</span></td>
+												<td><span>水</span></td>
+												<td><span>木</span></td>
+												<td><span>金</span></td>
+												<td><span>土</span></td>
+											</tr>
+											<tr class="ff-segoeui">
+												<td><span>×</span></td>
+												<td><span>○</span></td>
+												<td><span>△</span></td>
+												<td><span>○</span></td>
+												<td><span>△</span></td>
+												<td><span>△</span></td>
+											</tr>
+										</table>
+										<div class="schedule-explain">
+											<span><span class="ff-segoeui">○</span>&nbsp;<span>…空きあり</span></span>
+											<span><span class="ff-segoeui">△</span>&nbsp;<span>…残りわずか</span></span>
+											<span><span class="ff-segoeui">×</span>&nbsp;<span>…空きなし</span></span>
 										</div>
 									</div>
 								</div>
@@ -149,7 +183,7 @@
 					<img src="./assets/images/information_1_c.jpg" alt="" />
 				</div>
 				<div class="sec-container">
-					<div id="#detail2">
+					<div id="detail2" class="detail-info">
 						<h3 class="detail-title"><span>デイサービス1日の流れ</span></h3>
 						<h4><span>午前の過ごし方</span></h4>
 						<div class="time-table">
@@ -178,6 +212,8 @@
 								<p>唾液の分泌を良くし、食事がスムーズに食べられるように、発声練習や嚥下体操をします。</p>
 							</div>
 						</div>
+						<div class="time-table-space"></div>
+						<div class="time-table-space"></div>
 						<h4><span>午後の過ごし方</span></h4>
 						<div class="time-table">
 							<div class="time-table-item">
@@ -221,7 +257,7 @@
 				</div>
 			</div>
 			<div class="sec-container">
-				<div id="#detail3">
+				<div id="detail3" class="detail-info">
 					<h3 class="detail-title"><span>ご利用案内</span></h3>
 					<fieldset>
 						<div class="input-text">
@@ -233,19 +269,13 @@
 						<div class="input-text">
 							<label class="input-text-label"><span>ご利用できる方</span></label>
 							<div class="input-text-data">
-								<span>● 介護保険の要支援・要介護認定を受けた方</span>
-								<span>● 東京都町田市本町田周辺地域にお住まいの方（その他地区応相談）</span>
+								<span>● 介護保険の要支援・要介護認定を受けた方<br>● 東京都町田市本町田周辺地域にお住まいの方（その他地区応相談）</span>
 							</div>
 						</div>
 						<div class="input-text">
 							<label class="input-text-label"><span>利用料金</span></label>
 							<div class="input-text-data">
-								<span>※ 介護保険が適用されます</span>
-								<span>● おむつ代</span>
-								<span>● 食事代（650円）</span>
-								<span>● 趣味活動の材料費等、実費</span>
-								<span>● 行事・催事材料費</span>
-								<span>● その他介護保険1割負担分</span>
+								<span>※ 介護保険が適用されます<br>● おむつ代<br>● 食事代（650円）<br>● 趣味活動の材料費等、実費<br>● 行事・催事材料費<br>● その他介護保険1割負担分</span>
 							</div>
 						</div>
 						<div class="input-text">
@@ -287,6 +317,125 @@
 					</fieldset>
 				</div>
 			</div>
+			<div class="gray-bg">
+				<div class="sec-container">
+					<div id="detail4" class="detail-info">
+						<h3 class="detail-title"><span>交通案内</span></h3>
+						<div class="row no-gutters">
+							<div class="col-lg-6">
+								<figure>
+									<img src="./assets/images/information_1_d.jpg" alt="" />
+								</figure>
+							</div>
+							<div class="col-lg-6">
+								<h4><span>悠悠倶楽部（デイサービス）</span></h4>
+								<p>〒254-0012<br>神奈川県平塚市大神2048-1</p>
+								<hr>
+								<p>JR平塚駅北口 神奈中バス⑥番線より<br>●「平５０ 大神」行き<br>●「平５３ 本厚木駅南口」行き<br>●「平５４ 本厚木駅南口」行き<br>「寄木神社前」下車 徒歩3分</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="traffic-map">
+					<!-- Map Here -->
+					<img src="./assets/images/map.jpg" alt="" />
+				</div>
+			</div>
+			<div class="sec-information">
+				<div class="sec-inner">
+					<h3 class="sec-title"><span>施設のご紹介</span></h3>
+					<div class="row no-gutters gutter-1">
+						<div class="col-lg-3 col-6">
+							<div class="information-item">
+								<figure>
+									<img src="./assets/images/information_1.jpg" alt="" />
+								</figure>
+								<div class="information-detail">
+									<span class="information-city">平塚市</span>
+									<h3><span>悠悠倶楽部（デイサービス）</span></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-6">
+							<div class="information-item">
+								<figure>
+									<img src="./assets/images/information_2.jpg" alt="" />
+								</figure>
+								<div class="information-detail">
+									<span class="information-city">平塚市</span>
+									<h3><span>グループホーム悠悠苑</span></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-6">
+							<div class="information-item">
+								<figure>
+									<img src="./assets/images/information_3.jpg" alt="" />
+								</figure>
+								<div class="information-detail">
+									<span class="information-city">平塚市</span>
+									<h3><span>悠悠みらい<br>（地域密着型介護付有料老人ホーム）</span></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-6">
+							<div class="information-item">
+								<figure>
+									<img src="./assets/images/information_4.jpg" alt="" />
+								</figure>
+								<div class="information-detail">
+									<span class="information-city">平塚市</span>
+									<h3><span>ケアプラン悠悠苑</span></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-6">
+							<div class="information-item">
+								<figure>
+									<img src="./assets/images/information_5.jpg" alt="" />
+								</figure>
+								<div class="information-detail">
+									<span class="information-city">町田市</span>
+									<h3><span>デイサービスゆらり</span></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-6">
+							<div class="information-item">
+								<figure>
+									<img src="./assets/images/information_6.jpg" alt="" />
+								</figure>
+								<div class="information-detail">
+									<span class="information-city">相模原市</span>
+									<h3><span>グループホームゆらり相模原</span></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-6">
+							<div class="information-item">
+								<figure>
+									<img src="./assets/images/information_7.jpg" alt="" />
+								</figure>
+								<div class="information-detail">
+									<span class="information-city">大和市</span>
+									<h3><span>小規模多機能型共同生活介護<br>ゆらり倶楽部大和</span></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-6">
+							<div class="information-item">
+								<figure>
+									<img src="./assets/images/information_8.jpg" alt="" />
+								</figure>
+								<div class="information-detail">
+									<span class="information-city">八王子市</span>
+									<h3><span>グループホームゆらり並木</span></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="sec-contact">
 			<div class="sec-inner">
@@ -312,10 +461,10 @@
 		<div class="footer-inner">
 			<div class="row align-items-center">
 				<div class="col-md-auto">
-					<a href="#" class="footer-logo"><img src="./assets/images/footer_logo.png" alt="" /></a>
+					<a href="./index.html" class="footer-logo"><img src="./assets/images/footer_logo.png" alt="" /></a>
 				</div>
 				<div class="col-md-auto">
-					<a href="#" class="footer-link"><span>プライバシーポリシー</span></a>
+					<a href="./policy.html" class="footer-link"><span>プライバシーポリシー</span></a>
 				</div>
 				<div class="col-md text-md-center">
 					<div class="copyright ff-segoeui">Copyright © Heart Life Care</div>

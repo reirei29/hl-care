@@ -103,6 +103,12 @@
 			margin-bottom: 40px;
 		}
 	}
+
+	@media (max-width: 767px) {
+		.breadcrumb {
+			font-size: 10px;
+		}
+	}
 }
 
 .breadcrumb {
@@ -128,6 +134,11 @@
     			border-top: 1px solid #999;
     			transform: rotate(-45deg);
     			margin: 0 10px;
+
+    			@media (max-width: 767px) {
+    				width: 12px;
+    				margin: 0 5px;
+    			}
     		}
 
     		span, a {
@@ -282,4 +293,117 @@ fieldset {
 
 .gray-bg {
 	background-color: #f7f7f7;
+}
+
+.owl-image-carousel {
+	.owl-nav {
+		position: absolute;
+		left: -30px;
+		right: -30px;
+		top: 50%;
+		transform: translateY(calc(-50% - 20px));
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		button.owl-prev, button.owl-next {
+			font-size: 24px;
+			color: #ddd;
+
+			&:focus {
+				box-shadow: none;
+				outline: 0;
+			}
+
+			&:hover {
+				color: #fe6297;
+			}
+		}
+	}
+
+	.owl-dots {
+		display: block;
+		text-align: center;
+		margin: 15px 0;
+
+		button.owl-dot {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 10px;
+			background-color: #ddd;
+			margin: 5px;
+
+			&:hover, &.active {
+				background-color: #fe6297;
+			}
+
+			&:focus {
+				outline: 0;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.toolbar {
+    margin: 50px 0;
+
+    .pagination {
+    	text-align: center;
+    	display: block;
+
+    	> li {
+    		display: inline-block;
+    		vertical-align: middle;
+    		margin: 0 10px;
+
+    		&:last-child {
+    			margin-right: 0;
+
+    			@media (max-width: 767px) {
+    				display: none;
+    			}
+    		}
+
+    		&:first-child {
+    			margin-left: 0;
+    			
+    			@media (max-width: 767px) {
+    				display: none;
+    			}
+    		}
+
+    		> a {
+    			line-height: 75px;
+    			font-size: 18px;
+    			display: block;
+    			text-decoration: underline !important;
+
+    			@media (max-width: 991px) {
+    				line-height: 50px;
+    				font-size: 12px;
+    			}
+
+    			&:hover {
+    				color: #fe6297;
+    			}
+    		}
+
+    		&.page-num {
+    			margin: 0 5px;
+    			> a {
+    				text-decoration: none !important;
+    				width: 75px;
+    				text-align: center;
+    				border: 1px solid;
+    				border-radius: 50px;
+
+    				@media (max-width: 991px) {
+    					width: 50px;
+    				}
+    			}
+    		}
+    	}
+    }
 }

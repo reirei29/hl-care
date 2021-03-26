@@ -16,6 +16,14 @@ jQuery(function($){
     });
 
     $(document).ready(function() {
+        $("a[href*='#']").click(function(){
+            if($($(this).attr("href")).length)
+                $($(this).attr("href")).scrollToJustMe();
+            else
+                window.location.href=store_base_url + $(this).attr("href");
+            return false;
+        });
+        
         $(".custom-tab a").off("click").on("click", function(){
             $(this).parent().parent().find("a").removeClass("active");
             $(this).addClass("active");
