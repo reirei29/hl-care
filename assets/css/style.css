@@ -401,11 +401,11 @@ form fieldset .input-text {
           color: #fff;
           margin: -10px -15px 10px -15px; }
         .information-table tbody tr td:nth-child(1):before {
-          content: 'È†ÖÁõÆ'; }
+          content: 'çÄñ⁄'; }
         .information-table tbody tr td:nth-child(2):before {
-          content: 'ÂÜÖÂÆπ'; }
+          content: 'ì‡óe'; }
         .information-table tbody tr td:nth-child(3):before {
-          content: 'ÈáëÈ°ç'; }
+          content: 'ã‡äz'; }
         .information-table tbody tr td:nth-child(1) {
           margin-top: 20px; } }
   .information-table tbody tr:nth-child(2n+1) td {
@@ -2674,7 +2674,7 @@ body.page-news .sec-news .news-detail-toolbar {
       line-height: 1.6; }
       @media (max-width: 991px) {
         .page-voice .sec-voice .sec-aboutus h3 {
-          font-size: 24px;
+          font-size: 21px;
           margin-top: 35px;
           margin-bottom: 26px; } }
       .page-voice .sec-voice .sec-aboutus h3 + p {
@@ -2776,12 +2776,12 @@ body.page-news .sec-news .news-detail-toolbar {
         .page-voice .sec-voice .member-text p {
           font-size: 12px; } }
   .page-voice .sec-voice .sec-voice-text {
-    padding: 50px 0;
+    padding: 100px 0;
     border-bottom: 1px solid #eee; }
     .page-voice .sec-voice .sec-voice-text h5 {
       font-size: 20px;
       font-weight: 700;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       line-height: 1.6; }
       @media (max-width: 767px) {
         .page-voice .sec-voice .sec-voice-text h5 {
@@ -2795,8 +2795,8 @@ body.page-news .sec-news .news-detail-toolbar {
         .page-voice .sec-voice .sec-voice-text p {
           font-size: 13px; } }
     .page-voice .sec-voice .sec-voice-text figure {
-      margin-top: 40px;
-      margin-bottom: 40px; }
+      margin-top: 30px;
+      margin-bottom: 50px; }
       .page-voice .sec-voice .sec-voice-text figure img {
         width: 100%; }
 @media (max-width: 991px) {
