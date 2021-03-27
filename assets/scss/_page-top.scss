@@ -2638,7 +2638,7 @@ body.page-news {
 				line-height: 1.6;
 
 				@media (max-width: 991px) {
-					font-size: 24px;
+					font-size: 21px;
 					margin-top: 35px;
 					margin-bottom: 26px;
 				}
@@ -2783,13 +2783,13 @@ body.page-news {
 		}
 
 		.sec-voice-text {
-		    padding: 50px 0;
+		    padding: 100px 0;
 		    border-bottom: 1px solid #eee;
 
 		    h5 {
 		    	font-size: 20px;
 		    	font-weight: 700;
-		    	margin-bottom: 35px;
+		    	margin-bottom: 30px;
 		    	line-height: 1.6;
 
 		    	@media (max-width: 767px) {
@@ -2809,8 +2809,8 @@ body.page-news {
 		    }
 
 		    figure {
-		    	margin-top: 40px;
-		    	margin-bottom: 40px;
+		    	margin-top: 30px;
+		    	margin-bottom: 50px;
 
 		    	img {
 		    		width: 100%;
