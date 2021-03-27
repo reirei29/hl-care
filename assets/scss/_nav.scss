@@ -435,6 +435,10 @@ body.page-contact {
 		font-size: 13px;
 		font-weight: 700;
 		margin: 10px 0;
+
+		@media (min-width: 992px) {
+			padding-left: 20%;
+		}
 	}
 
 	@media (max-width: 767px) {

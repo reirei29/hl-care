@@ -156,9 +156,10 @@
 fieldset {
 	.input-text {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		min-height: 80px;
 		border-bottom: 1px solid #e7ebef;
+		line-height: 1.5;
 
 		@media (max-width: 991px) {
 			min-height: 0;
@@ -169,7 +170,7 @@ fieldset {
 			min-width: 255px;
 			font-size: 18px;
 			font-weight: 700;
-			margin: 0;
+			margin: 25px 0;
 
 			@media (max-width: 991px) {
 				font-size: 12px;
@@ -291,6 +292,12 @@ fieldset {
 	}
 }
 
+form {
+	fieldset .input-text {
+		align-items: center;
+	}
+}
+
 .gray-bg {
 	background-color: #f7f7f7;
 }
@@ -406,4 +413,130 @@ fieldset {
     		}
     	}
     }
+}
+
+.information-table {
+	font-size: 18px;
+
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
+
+	thead {
+		th {
+			background-color: #9a9a9a;
+			color: #fff;
+			border-left: 1px solid #cdcdcd;
+			text-align: center;
+			padding: 10px 15px;
+
+			&:first-child {
+				border-left: 0;
+			}
+		}
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+				padding: 10px 15px;
+				border-left: 1px solid #cdcdcd;
+
+				&:nth-child(1), &:nth-child(3) {
+					white-space: nowrap;
+				}
+
+				&:first-child {
+					border-left: 0;
+				}
+
+				&[colspan="3"] {
+					padding-left: 0;
+					padding-right: 0;
+
+					@media (max-width: 767px) {
+						&:before {
+							display: none;
+						}
+					}
+				}
+
+				@media (max-width: 767px) {
+					display: block;
+					border-left: 0;
+
+					&:before {
+						content: '';
+						display: block;
+						padding: 10px 15px;
+						background-color: #9a9a9a;
+						color: #fff;
+						margin: -10px -15px 10px -15px;
+					}
+
+					&:nth-child(1):before {
+						content: '項目';
+					}
+
+					&:nth-child(2):before {
+						content: '内容';
+					}
+
+					&:nth-child(3):before {
+						content: '金額';
+					}
+
+					&:nth-child(1) {
+						margin-top: 20px;
+					}
+				}
+			}
+
+			&:nth-child(2n+1) {
+				td {
+					background-color: #eeefe7;
+				}
+			}
+
+			&:nth-child(2n) {
+				td {
+					background-color: #f6f7f2;
+				}
+			}
+		}
+	}
+}
+
+.lh-1p5 {
+	line-height: 1.5;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.fs-20 {
+	font-size: 20px;
+
+	@media (max-width: 767px) {
+		font-size: 14px;
+	}
+}
+
+.fs-18 {
+	font-size: 18px;
+
+	@media (max-width: 767px) {
+		font-size: 13px;
+	}
+}
+
+.quick-link.no-border {
+	&:before {
+		display: none !important;
+	}
 }

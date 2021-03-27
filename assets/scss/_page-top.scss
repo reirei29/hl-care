@@ -1299,6 +1299,7 @@ section {
 
 	.information-item {
 		position: relative;
+		display: block;
 		margin-right: -1px;
 
 		@media (max-width: 767px) {
@@ -1337,7 +1338,7 @@ section {
 				position: relative;
 				padding-right: 25px;
 
-				> a {
+				> b {
 					display: inline-block;
 					width: 20px;
 					line-height: 20px;
@@ -1967,7 +1968,7 @@ section {
 		}
 	}
 
-	#detail1 {
+	#detail1, #detail1_1 {
 		margin-bottom: 100px;
 
 		@media (min-width: 992px) {
@@ -2119,12 +2120,44 @@ section {
 			}
 		}
 	}
+
+	#detail5 {
+		.time-table .time-table-item {
+			background-color: #f6f7f2;
+
+			p {
+				line-height: 2;
+			}
+
+			.business-detail {
+				font-size: 20px;
+			    display: flex;
+			    align-items: center;
+			    font-weight: 700;
+
+			    em {
+			    	font-style: normal;
+			    	font-size: 35px;
+			    	margin-right: 30px;
+			    }
+
+			    @media (max-width: 991px) {
+			    	font-size: 16px;
+
+			    	em {
+			    		font-size: 24px;
+			    	}
+			    }
+			}
+		}
+	}
 }
 
 body.page-news {
 	.sec-news {
 		.sec-row {
 			.sec-right {
+				position: relative;
 				border-left: 0;
 				margin-left: 0;
 			}
@@ -2265,7 +2298,7 @@ body.page-news {
 				position: relative;
 				padding-right: 25px;
 
-				> a {
+				> b {
 					display: inline-block;
 					width: 20px;
 					line-height: 20px;
@@ -2638,7 +2671,7 @@ body.page-news {
 				line-height: 1.6;
 
 				@media (max-width: 991px) {
-					font-size: 21px;
+					font-size: 24px;
 					margin-top: 35px;
 					margin-bottom: 26px;
 				}
@@ -2783,13 +2816,13 @@ body.page-news {
 		}
 
 		.sec-voice-text {
-		    padding: 100px 0;
+		    padding: 50px 0;
 		    border-bottom: 1px solid #eee;
 
 		    h5 {
 		    	font-size: 20px;
 		    	font-weight: 700;
-		    	margin-bottom: 30px;
+		    	margin-bottom: 35px;
 		    	line-height: 1.6;
 
 		    	@media (max-width: 767px) {
@@ -2809,8 +2842,8 @@ body.page-news {
 		    }
 
 		    figure {
-		    	margin-top: 30px;
-		    	margin-bottom: 50px;
+		    	margin-top: 40px;
+		    	margin-bottom: 40px;
 
 		    	img {
 		    		width: 100%;
@@ -2823,5 +2856,27 @@ body.page-news {
 		@media (max-width: 991px) {
 			margin-bottom: 50px;
 		}
+	}
+}
+
+.detail-subtitle {
+	background-color: #dfe2cb;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.5;
+	padding: 20px 0;
+	margin-bottom: 80px;
+
+	@media (max-width: 767px) {
+		font-size: 16px;
+		margin-bottom: 50px;
+	}
+}
+
+ul.news-tabs.custom-tab {
+	position: relative;
+
+	@media (max-width: 767px) {
+		position: static;
 	}
 }
