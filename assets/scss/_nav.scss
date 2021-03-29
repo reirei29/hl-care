@@ -114,8 +114,10 @@
 					}
 				}
 
-				.subnav-opener {
-					display: none;
+				@media (min-width: 1200px) {
+					.subnav-opener {
+						display: none;
+					}
 				}
 			}
 		}

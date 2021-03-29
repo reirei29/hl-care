@@ -656,6 +656,10 @@ section {
 	    top: -250px;
 	    margin-bottom: -250px;
 
+	    @media (max-width: 991px) {
+	    	width: 100%;
+	    }
+
 		@media (max-width: 767px) {
 			height: 350px;
 			width: 100%;
@@ -811,6 +815,10 @@ section {
 			padding: 70px 0;
 			padding-right: 40px;
 
+			@media (max-width: 991px) {
+				padding-left: 35px;
+			}
+
 			.btn-container {
 				padding: 40px 0;
 				text-align: right;
@@ -857,9 +865,6 @@ section {
 	}
 
 	.news-item {
-		padding: 30px 0;
-    	border-bottom: 1px solid #f3f3f3;
-
 		.news-label {
 		    display: inline-block;
 		    line-height: 30px;
@@ -878,14 +883,36 @@ section {
 		}
 
 		.news-title {
-			margin: 10px 0;
+			margin: 10px 0 0;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 1.6;
+			transition: all .5s ease;
+		}
 
-			a {
-				font-size: 20px;
-				font-weight: 600;
-				line-height: 1.6;
+		> a {
+			display: block;
+			position: relative;
+			padding: 30px 0;
+	    	border-bottom: 1px solid #f3f3f3;
 
-				&:hover {
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 100%;
+				bottom: 0;
+				border-bottom: 1px solid #fe6297;
+				transition: all .5s ease;
+			}
+
+			&:hover {
+				&:after {
+					right: 0;
+				}
+
+				.news-title {
 					color: #fe6297;
 				}
 			}
@@ -903,9 +930,7 @@ section {
 			}
 
 			.news-title {
-				a {
-					font-size: 14px;
-				}
+				font-size: 14px;
 			}
 		}
 	}
@@ -1388,11 +1413,22 @@ section {
 	padding: 40px 0 50px;
 	background-color: #eeefe7;
 
+	@media (max-width: 991px) {
+		.sec-inner {
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+
 	@media (max-width: 767px) {
-		padding: 40px 35px 0;
+		padding: 40px 0 0;
 	}
 
 	figure {
+		img {
+			width: 100%;
+		}
+		
 		@media (max-width: 767px) {
 			margin-bottom: 40px;
 		}
@@ -1530,8 +1566,15 @@ section {
 .sec-ads {
 	padding: 50px 0;
 
+	@media (max-width: 991px) {
+		.sec-inner {
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+
 	@media (max-width: 767px) {
-		padding: 35px 35px 0;
+		padding: 35px 0 0;
 	}
 
 	figure {
@@ -2671,7 +2714,7 @@ body.page-news {
 				line-height: 1.6;
 
 				@media (max-width: 991px) {
-					font-size: 21px;
+					font-size: 24px;
 					margin-top: 35px;
 					margin-bottom: 26px;
 				}
@@ -2816,13 +2859,13 @@ body.page-news {
 		}
 
 		.sec-voice-text {
-		    padding: 100px 0;
+		    padding: 50px 0;
 		    border-bottom: 1px solid #eee;
 
 		    h5 {
 		    	font-size: 20px;
 		    	font-weight: 700;
-		    	margin-bottom: 30px;
+		    	margin-bottom: 35px;
 		    	line-height: 1.6;
 
 		    	@media (max-width: 767px) {
@@ -2842,8 +2885,8 @@ body.page-news {
 		    }
 
 		    figure {
-		    	margin-top: 30px;
-		    	margin-bottom: 50px;
+		    	margin-top: 40px;
+		    	margin-bottom: 40px;
 
 		    	img {
 		    		width: 100%;
@@ -2878,5 +2921,11 @@ ul.news-tabs.custom-tab {
 
 	@media (max-width: 767px) {
 		position: static;
+	}
+}
+
+body.page-contact {
+	fieldset .input-text .input-text-data {
+	    margin: 25px 0;
 	}
 }
