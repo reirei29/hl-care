@@ -109,12 +109,7 @@ section {
 		height: 400px;
 	}
 
-	@media (min-width: 1024px) {
-		width: 500px;
-		height: 500px;
-	}
-
-	@media (min-width: 1400px) {
+	@media (min-width: 1200px) {
 		width: 600px;
 		height: 600px;
 	}
@@ -122,6 +117,7 @@ section {
 	p.l-kv__txt_point {
 	    padding: 36px 0 0;
 	    text-align: center;
+		font-family: $en-font;
 	    font-size: 10px;
 	    color: #fff;
 	    text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
@@ -131,45 +127,24 @@ section {
     		font-size: 15px;
 		}
 
-		@media (min-width: 1024px) {
-			padding: 72px 0 0;
-		}
-
-		@media (min-width: 1400px) {
+		@media (min-width: 1200px) {
 			padding: 100px 0 0;
-		}
-
-		> span {
-			display: block;
-			margin-top: 30px;
-			line-height: 1.6;
 		}
 	}
 
 	.wip_number_wrap {
 	    position: relative;
 	    width: 38px;
-	    margin: 110px auto 0;
-
-		@media (max-width: 768px) {
-	    	width: 74px;
-			margin: 130px auto 0;
-			margin-top: 150px;
-		}
+	    margin: 180px auto 0;
+		font-family: $en-font;
 
 	    @media (min-width: 768px) {
 	    	width: 74px;
-			margin: 130px auto 0;
-			margin-top: 200px;
+			margin: 240px auto 0;
 		}
 
-		@media (min-width: 1024px) {
-			margin: 180px auto 0;
-			margin-top: 220px;
-		}
-
-		@media (min-width: 1400px) {
-			margin-top: 260px;
+		@media (min-width: 1200px) {
+			margin: calc(100% - 280px) auto 0;
 		}
 
 		.wip_number_inner {
@@ -177,7 +152,7 @@ section {
 		    height: 27px;
 		    overflow: hidden;
 
-		    @media (min-width: 1024px) {
+		    @media (min-width: 1200px) {
 		    	height: 40px;
 		    }
 
@@ -195,7 +170,7 @@ section {
 					font-size: 26px;
 				}
 
-				@media (min-width: 1024px) {
+				@media (min-width: 1200px) {
 					padding: 0 0 15px;
 					font-size: 35px;
 				}
@@ -211,20 +186,12 @@ section {
 		    color: #fff;
 		    line-height: 1;
 
-		
-
 		    @media (min-width: 768px) {
-				margin-top: 8px;
+				margin-top: 7px;
 				font-size: 26px;
 			}
 
-			@media (min-width: 1024px) {
-				margin: 9px 0 0;
-				padding: 15px 0 0;
-				font-size: 35px;
-			}
-
-			@media (min-width: 1400px) {
+			@media (min-width: 1200px) {
 				padding: 15px 0 0;
 				font-size: 35px;
 			}
@@ -251,12 +218,7 @@ section {
 		    height: 403px;
 	    }
 
-	    @media (min-width: 1024px) {
-		    width: 503px;
-		    height: 503px;
-	    }
-
-	    @media (min-width: 1400px) {
+	    @media (min-width: 1200px) {
 		    width: 603px;
 		    height: 603px;
 	    }
@@ -267,13 +229,13 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -70%);
     width: 100%;
-    height: 100px;
+    height: 50%;
     overflow: hidden;
 
-    @media (max-width: 1024px) {
-    	top: 56%;
+    @media (max-width: 1200px) {
+    	top: 50%;
     }
 
     p {
@@ -288,54 +250,34 @@ section {
 	    line-height: 1.7;
 	    transition: all 1.2s cubic-bezier(0.4, 0.2, 0.05, 1);
 
+	    @media (max-width: 1199px) {
+	    	line-height: 1.4;
+	    }
+
+		> span {
+			display: block;
+			font-family: $base-font;
+			margin-top: 30px;
+			line-height: 1.6;
+			text-align: center;
+			font-size: 10px;
+			margin-bottom: 20px;
+
+			@media (max-width: 1199px) {
+				margin-bottom: 5px;
+			}
+
+			@media (min-width: 768px) {
+				font-size: 15px;
+			}
+		}
+
 	    @media (min-width: 768px) {
     		font-size: 26px;
 		}
 
-		@media (min-width: 1024px) {
+		@media (min-width: 1200px) {
     		font-size: 35px;
-		}
-	}
-}
-
-
-.wip_title_wrap {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -65%);
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-
-    @media (max-width: 1024px) {
-    	top: 36%;
-    }
-
-    p {
-	    position: absolute;
-	    top: 30%;
-	    left: 50%;
-	    transform: translate(-50%, -50%);
-	    width: 100%;
-	    text-align: center;
-	    font-size: 10px;
-	    color: #fff;
-	    line-height: 1.7;
-	    transition: all 1.2s cubic-bezier(0.4, 0.2, 0.05, 1);
-
-		
-	    @media (max-width: 767px) {
-    		font-size: 12px;
-			top: 35%;
-		}
-
-	    @media (min-width: 768px) {
-    		font-size: 15px;
-		}
-
-		@media (min-width: 1024px) {
-    		font-size: 15px;
 		}
 	}
 }
@@ -347,17 +289,6 @@ section {
 		}
 
 		p.wip_txt_02, p.wip_txt_03, p.wip_txt_04, p.wip_txt_05, p.wip_txt_06, p.wip_txt_07, p.wip_txt_08, p.wip_txt_09 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
-
-	.wip_title_wrap {
-		p.wip_title_01 {
-			margin: 0;
-		}
-
-		p.wip_title_02, p.wip_title_03, p.wip_title_04, p.wip_title_05, p.wip_title_06, p.wip_title_07, p.wip_title_08, p.wip_title_09 {
 			margin: 110px 0 0;
 			opacity: 0;
 		}
@@ -388,23 +319,6 @@ section {
 		}
 
 		p.wip_txt_03, p.wip_txt_04, p.wip_txt_05, p.wip_txt_06, p.wip_txt_07, p.wip_txt_08, p.wip_txt_09 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
-
-	.wip_title_wrap {
-		p.wip_title_01 {
-			margin: -110px 0 0;
-			opacity: 0;
-		}
-
-		p.wip_title_02 {
-			margin: 0;
-			opacity: 1;
-		}
-
-		p.wip_title_03, p.wip_title_04, p.wip_title_05, p.wip_title_06, p.wip_title_07, p.wip_title_08, p.wip_title_09 {
 			margin: 110px 0 0;
 			opacity: 0;
 		}
@@ -445,23 +359,6 @@ section {
 			opacity: 0;
 		}
 	}
-
-	.wip_title_wrap {
-		p.wip_title_01, p.wip_title_02 {
-			margin: -110px 0 0;
-			opacity: 0;
-		}
-
-		p.wip_title_03 {
-			margin: 0;
-			opacity: 1;
-		}
-
-		p.wip_title_04, p.wip_title_05, p.wip_title_06, p.wip_title_07, p.wip_title_08, p.wip_title_09 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
 	
 	.wip_number_wrap .wip_number_inner {
 		p.wip_number_01, p.wip_number_02 {
@@ -494,23 +391,6 @@ section {
 		}
 
 		p.wip_txt_05, p.wip_txt_06, p.wip_txt_07, p.wip_txt_08, p.wip_txt_09 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
-
-	.wip_title_wrap {
-		p.wip_title_01, p.wip_title_02, p.wip_title_03 {
-			margin: -110px 0 0;
-			opacity: 0;
-		}
-
-		p.wip_title_04 {
-			margin: 0;
-			opacity: 1;
-		}
-
-		p.wip_title_05, p.wip_title_06, p.wip_title_07, p.wip_title_08, p.wip_title_09 {
 			margin: 110px 0 0;
 			opacity: 0;
 		}
@@ -551,23 +431,6 @@ section {
 			opacity: 0;
 		}
 	}
-
-	.wip_title_wrap {
-		p.wip_title_01, p.wip_title_02, p.wip_title_03, p.wip_title_04 {
-			margin: -110px 0 0;
-			opacity: 0;
-		}
-
-		p.wip_title_05 {
-			margin: 0;
-			opacity: 1;
-		}
-
-		p.wip_title_06, p.wip_title_07, p.wip_title_08, p.wip_title_09 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
 	
 	.wip_number_wrap .wip_number_inner {
 		p.wip_number_01, p.wip_number_02, p.wip_number_03, p.wip_number_04 {
@@ -600,23 +463,6 @@ section {
 		}
 
 		p.wip_txt_07, p.wip_txt_08, p.wip_txt_09 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
-
-	.wip_title_wrap {
-		p.wip_title_01, p.wip_title_02, p.wip_title_03, p.wip_title_04, p.wip_title_05 {
-			margin: -110px 0 0;
-			opacity: 0;
-		}
-
-		p.wip_title_06 {
-			margin: 0;
-			opacity: 1;
-		}
-
-		p.wip_title_07, p.wip_title_08, p.wip_title_09 {
 			margin: 110px 0 0;
 			opacity: 0;
 		}
@@ -657,23 +503,6 @@ section {
 			opacity: 0;
 		}
 	}
-
-	.wip_title_wrap {
-		p.wip_title_01, p.wip_title_02, p.wip_title_03, p.wip_title_04, p.wip_title_05, p.wip_title_06 {
-			margin: -110px 0 0;
-			opacity: 0;
-		}
-
-		p.wip_title_07 {
-			margin: 0;
-			opacity: 1;
-		}
-
-		p.wip_title_08, p.wip_title_09 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
 	
 	.wip_number_wrap .wip_number_inner {
 		p.wip_number_01, p.wip_number_02, p.wip_number_03, p.wip_number_04, p.wip_number_05, p.wip_number_06 {
@@ -710,23 +539,6 @@ section {
 			opacity: 0;
 		}
 	}
-
-	.wip_title_wrap {
-		p.wip_title_01, p.wip_title_02, p.wip_title_03, p.wip_title_04, p.wip_title_05, p.wip_title_06, p.wip_title_07 {
-			margin: -110px 0 0;
-			opacity: 0;
-		}
-
-		p.wip_title_08 {
-			margin: 0;
-			opacity: 1;
-		}
-
-		p.wip_title_09 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
 	
 	.wip_number_wrap .wip_number_inner {
 		p.wip_number_01, p.wip_number_02, p.wip_number_03, p.wip_number_04, p.wip_number_05, p.wip_number_06, p.wip_number_07 {
@@ -759,23 +571,6 @@ section {
 		}
 
 		p.wip_txt_01 {
-			margin: 110px 0 0;
-			opacity: 0;
-		}
-	}
-
-	.wip_title_wrap {
-		p.wip_title_02, p.wip_title_03, p.wip_title_04, p.wip_title_05, p.wip_title_06, p.wip_title_07, p.wip_title_08 {
-			margin: -110px 0 0;
-			opacity: 0;
-		}
-
-		p.wip_title_09 {
-			margin: 0;
-			opacity: 1;
-		}
-
-		p.wip_title_01 {
 			margin: 110px 0 0;
 			opacity: 0;
 		}
@@ -982,6 +777,10 @@ section {
 	    top: -18px;
 	    font-weight: 700;
 
+	    > span {
+	    	font-family: $en-font;
+	    }
+
 		> em {
 			display: block;
 			font-size: 0.5em;
@@ -1080,7 +879,9 @@ section {
 		}
 
 		.news-date {
+			font-family: $en-font;
 			font-size: 14px;
+			font-weight: 500;
 			line-height: 30px;
 			color: #999;
 		}
@@ -1243,7 +1044,7 @@ section {
 			}
 
 			&.order-lg-last {
-				@media (min-width: 1024px) {
+				@media (min-width: 1200px) {
 					order: 12;
 				}
 			}
@@ -1280,6 +1081,10 @@ section {
 
 		@media (max-width: 767px) {
 			font-size: 24px;
+		}
+
+		> span {
+			font-family: $en-font;
 		}
 
 		> em {
@@ -1387,6 +1192,7 @@ section {
 				font-size: 20px;
 				text-align: center;
 				font-weight: 700;
+				font-family: $en-font;
 
 				@media (max-width: 767px) {
 					font-size: 14px;
@@ -1428,6 +1234,7 @@ section {
 				font-size: 20px;
 				text-align: center;
 				font-weight: 700;
+				font-family: $en-font;
 
 				@media (max-width: 767px) {
 					font-size: 12px;
@@ -1500,6 +1307,10 @@ section {
 		@media (max-width: 767px) {
 			font-size: 24px;
 			margin-bottom: 35px;
+		}
+
+		> span {
+			font-family: $en-font;
 		}
 
 		> em {
@@ -1719,6 +1530,10 @@ section {
 		@media (max-width: 767px) {
 			font-size: 24px;
 			margin-bottom: 35px;
+		}
+
+		> span {
+			font-family: $en-font;
 		}
 
 		em {
@@ -1952,6 +1767,10 @@ section {
 		height: 700px;
 		max-height: 100vh;
 		margin-bottom: 80px;
+
+		@media (max-width: 767px) {
+			height: 350px;
+		}
 
 		img {
 			object-fit: cover;
@@ -2198,6 +2017,7 @@ section {
 			font-weight: 700;
 			line-height: 1.5;
 			margin-bottom: 30px;
+			font-family: $en-font;
 		}
 
 		h5 {
@@ -2211,6 +2031,20 @@ section {
 			font-size: 18px;
 			line-height: 1.5;
 			margin-bottom: 20px
+		}
+
+		@media (max-width: 767px) {
+			h4 {
+				font-size: 14px;
+			}
+
+			h5 {
+				font-size: 13px;
+			}
+
+			p {
+				font-size: 13px;
+			}
 		}
 	}
 
@@ -2235,10 +2069,18 @@ section {
 
 			.item-title > h3 {
 				font-size: 18px;
+
+				@media (max-width: 767px) {
+					font-size: 14px;
+				}
 			}
 
 			.item-schedule .schedule-explain {
 				font-size: 12px;
+
+				@media (max-width: 767px) {
+					font-size: 10px;
+				}
 
 				> span {
 					margin-right: 5px;
@@ -2385,6 +2227,7 @@ section {
 			    	font-style: normal;
 			    	font-size: 35px;
 			    	margin-right: 30px;
+			    	font-family: $en-font;
 			    }
 
 			    @media (max-width: 991px) {
@@ -2439,6 +2282,8 @@ body.page-news {
 				font-size: 14px;
 				line-height: 30px;
 				color: #999;
+				font-family: $en-font;
+				font-weight: 500;
 			}
 
 			.news-title {
@@ -2490,6 +2335,10 @@ body.page-news {
 			> a {
 				font-size: 18px;
 				text-decoration: underline !important;
+
+				&:first-child, &:last-child {
+					font-family: $en-font;
+				}
 
 				@media (max-width: 767px) {
 					font-size: 12px;
@@ -2613,6 +2462,7 @@ body.page-news {
 				transform-origin: bottom right;
 				font-weight: 700;
 				line-height: 1;
+				font-family: $en-font;
 			}
 
 			@media (max-width: 991px) {
@@ -2632,6 +2482,7 @@ body.page-news {
 			h5 {
 				font-size: 18px;
 				margin-bottom: 15px;
+				font-family: $en-font;
 
 				@media (max-width: 991px) {
 					font-size: 12px;
@@ -2647,6 +2498,7 @@ body.page-news {
 			    margin-bottom: 10px;
 
 			    em {
+			    	font-family: $en-font;
 			    	font-style: normal;
 			    	font-size: 35px;
 			    	margin-right: 20px;
@@ -2686,6 +2538,7 @@ body.page-news {
 	h5 {
 		font-size: 18px;
 		margin-bottom: 15px;
+		font-family: $en-font;
 
 		@media (max-width: 991px) {
 			font-size: 12px;
@@ -2721,6 +2574,7 @@ body.page-news {
 			right: 0;
 			transform: translateY(calc(50% - 35px));
 			z-index: -1;
+			font-family: $en-font;
 
 			@media (max-width: 991px) {
 				transform: translateX(50%) translateY(50%);
@@ -2870,6 +2724,7 @@ body.page-news {
 			thead {
 				th {
 					border-bottom: 1px solid #eee;
+					font-family: $en-font;
 
 					&:first-child {
 						border-right: 1px solid #eee;
@@ -2880,6 +2735,11 @@ body.page-news {
 			tbody {
 				th {
 					border-right: 1px solid #eee;
+					font-family: $en-font;
+				}
+
+				td:nth-child(2) {
+					font-family: $en-font;
 				}
 			}
 		}
@@ -3121,6 +2981,10 @@ body.page-news {
 
 ul.news-tabs.custom-tab {
 	position: relative;
+
+	@media (min-width: 768px) {
+		padding-top: 40px;
+	}
 
 	@media (max-width: 767px) {
 		position: static;

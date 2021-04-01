@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-.ff-segoeui {
-	font-family: SegoeUI-Bold, Segoe UI;
+.en-font {
+	font-family: $en-font;
 }
 
 .row {
@@ -42,6 +42,10 @@
 	margin-bottom: 80px;
 	font-weight: 700;
 	text-align: center;
+
+	> span {
+		font-family: $en-font;
+	}
 
 	> em {
 		font-size: 0.5em;
@@ -284,6 +288,7 @@ fieldset {
 		    background-color: #f6f7f2;
 		    min-height: 235px;
 		    margin: 15px 0;
+		    padding: 15px 20px;
 
 		    @media (max-width: 991px) {
 		    	margin: 0 0 10px;
@@ -386,6 +391,7 @@ form {
     			font-size: 18px;
     			display: block;
     			text-decoration: underline !important;
+    			font-family: $en-font;
 
     			@media (max-width: 991px) {
     				line-height: 50px;
@@ -446,8 +452,10 @@ form {
 				padding: 10px 15px;
 				border-left: 1px solid #cdcdcd;
 
-				&:nth-child(1), &:nth-child(3) {
-					white-space: nowrap;
+				@media (min-width: 768px) {
+					&:nth-child(1), &:nth-child(3) {
+						white-space: nowrap;
+					}
 				}
 
 				&:first-child {

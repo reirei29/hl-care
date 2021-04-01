@@ -386,6 +386,16 @@
 	}
 }
 
+@media (max-width: 1199px) {
+	.page-information {
+		.quick-nav {
+			.nav-info, .nav-contact {
+				width: 50%;
+			}
+		}
+	}
+}
+
 body.page-contact {
 	@media (max-width: 1199px) {
 		.quick-nav {

@@ -10,10 +10,10 @@
     <title>入力内容の確認 | Heart Life Care</title>
 
     <!-- css -->
+    <link rel="stylesheet" href="https://use.typekit.net/mnx8law.css">
     <link rel="stylesheet" href="./libs/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/mnx8law.css">
 
     <!-- javascript -->
     <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
@@ -111,7 +111,7 @@
 						</div>
 						<div class="input-text">
 							<label class="input-text-label"><span>郵便番号</span></label>
-							<span class="input-text-data">〒000-0000</span>
+							<span class="input-text-data en-font">〒000-0000</span>
 						</div>
 						<div class="input-text">
 							<label class="input-text-label"><span>ご住所</span></label>
@@ -119,15 +119,15 @@
 						</div>
 						<div class="input-text">
 							<label class="input-text-label"><span>お電話番号</span></label>
-							<span class="input-text-data">000-000-0000</span>
+							<span class="input-text-data en-font">000-000-0000</span>
 						</div>
 						<div class="input-text">
 							<label class="input-text-label"><span>メールアドレス</span></label>
-							<span class="input-text-data">000＠0000</span>
+							<span class="input-text-data en-font">000＠0000</span>
 						</div>
 						<div class="input-text">
 							<label class="input-text-label"><span>メールアドレス<br>（確認用）</span></label>
-							<span class="input-text-data">000＠0000</span>
+							<span class="input-text-data en-font">000＠0000</span>
 						</div>
 						<div class="input-text">
 							<label class="input-text-label"><span>資料請求</span></label>
@@ -188,25 +188,15 @@
 					<a href="./policy.html" class="footer-link"><span>プライバシーポリシー</span></a>
 				</div>
 				<div class="col-md">
-					<div class="copyright ff-segoeui">Copyright © Heart Life Care</div>
+					<div class="copyright">Copyright © Heart Life Care</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 
+
 	<script src="./libs/wipeslider/jquery.wipeSlider.js"></script>
 	<script src="./assets/js/top-wipe.js"></script>
 	<script src="./assets/js/script.js"></script>
-	<script>
-		// Loading font async : Source Han Sans JP Normal,Regular,Medium,Bold
-		(function(d) {
-			var config = {
-						kitId: 'vaf2moe',
-						scriptTimeout: 3000,
-						async: true
-					},
-					h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-		})(document);
-	</script>
 </body>
 </html>
