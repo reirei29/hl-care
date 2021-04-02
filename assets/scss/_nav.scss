@@ -114,7 +114,7 @@
 					}
 				}
 
-				@media (min-width: 1200px) {
+				@media (min-width: 1024px) {
 					.subnav-opener {
 						display: none;
 					}
@@ -140,7 +140,7 @@
 		height: 50px;
 		align-items: center;
 
-		@media (max-width: 1199px) {
+		@media (max-width: 1023px) {
 			display: flex;
 			align-items: center;
 		    justify-content: center;
@@ -173,7 +173,7 @@
 		}
 	}
 
-    @media (max-width: 1199px) {
+    @media (max-width: 1023px) {
 		position: relative;
 		width: 100%;
 		height: 50px;
@@ -246,7 +246,7 @@
 		}
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
     	.navigation {
 		    > ul > li {
 			    > a + ul {
@@ -353,7 +353,7 @@
 		height: 80px;
 	}
 
-	@media (max-width: 1199px) {
+	@media (max-width: 1023px) {
 		position: fixed;
 		width: 100%;
 		top: auto;
@@ -386,7 +386,7 @@
 	}
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
 	.page-information {
 		.quick-nav {
 			.nav-info, .nav-contact {
@@ -397,7 +397,7 @@
 }
 
 body.page-contact {
-	@media (max-width: 1199px) {
+	@media (max-width: 1023px) {
 		.quick-nav {
 			.nav-info, .nav-status {
 				width: 50%;
@@ -467,7 +467,7 @@ body.page-contact {
 }
 
 body.nav-open {
-	@media (max-width: 1199px) {
+	@media (max-width: 1023px) {
 		.overlay {
 			opacity: 1;
 			visibility: visible;

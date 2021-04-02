@@ -317,10 +317,12 @@ form {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		pointer-events: none;
 
 		button.owl-prev, button.owl-next {
 			font-size: 24px;
 			color: #ddd;
+			pointer-events: all;
 
 			&:focus {
 				box-shadow: none;
@@ -546,5 +548,48 @@ form {
 .quick-link.no-border {
 	&:before {
 		display: none !important;
+	}
+}
+
+input[type=radio] {
+	display: none;
+
+	& + span {
+		display: block;
+		position: relative;
+		padding-left: 44px;
+		line-height: 30px;
+		cursor: pointer;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+			border: 1px solid #808080;
+			background-color: #f6f7f2;
+		}
+
+		&:after {
+			content: "";
+			display: none;
+			position: absolute;
+			left: 8px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 15px;
+			height: 15px;
+			border-radius: 15px;
+			background-color: #9e9f9a;
+		}
+	}
+
+	&:checked + span:after {
+		display: block;
 	}
 }

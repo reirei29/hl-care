@@ -44,7 +44,7 @@ ul {
 .page-main {
   padding-left: 250px;
   overflow-x: hidden; }
-  @media (max-width: 1199px) {
+  @media (max-width: 1023px) {
     .page-main {
       padding-left: 0; } }
 
@@ -64,6 +64,9 @@ ul {
 
 .c-theme {
   color: #fe0459; }
+
+.compensate-for-scrollbar {
+  margin-right: 0 !important; }
 
 .en-font {
   font-family: aktiv-grotesk, sans-serif; }
@@ -295,10 +298,12 @@ form fieldset .input-text {
   transform: translateY(calc(-50% - 20px));
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  pointer-events: none; }
   .owl-image-carousel .owl-nav button.owl-prev, .owl-image-carousel .owl-nav button.owl-next {
     font-size: 24px;
-    color: #ddd; }
+    color: #ddd;
+    pointer-events: all; }
     .owl-image-carousel .owl-nav button.owl-prev:focus, .owl-image-carousel .owl-nav button.owl-next:focus {
       box-shadow: none;
       outline: 0; }
@@ -439,6 +444,40 @@ form fieldset .input-text {
 .quick-link.no-border:before {
   display: none !important; }
 
+input[type=radio] {
+  display: none; }
+  input[type=radio] + span {
+    display: block;
+    position: relative;
+    padding-left: 44px;
+    line-height: 30px;
+    cursor: pointer; }
+    input[type=radio] + span:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      border: 1px solid #808080;
+      background-color: #f6f7f2; }
+    input[type=radio] + span:after {
+      content: "";
+      display: none;
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      background-color: #9e9f9a; }
+  input[type=radio]:checked + span:after {
+    display: block; }
+
 .page-header {
   position: fixed;
   left: 0;
@@ -511,7 +550,7 @@ form fieldset .input-text {
     .page-header .navigation > ul > li:hover > a + ul {
       visibility: visible;
       opacity: 1; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) {
     .page-header .navigation > ul > li .subnav-opener {
       display: none; } }
   .page-header .social-links > a {
@@ -526,7 +565,7 @@ form fieldset .input-text {
     width: 50px;
     height: 50px;
     align-items: center; }
-    @media (max-width: 1199px) {
+    @media (max-width: 1023px) {
       .page-header .nav-burger {
         display: flex;
         align-items: center;
@@ -549,7 +588,7 @@ form fieldset .input-text {
         top: -10px; }
       .page-header .nav-burger > span:after {
         bottom: -8px; }
-  @media (max-width: 1199px) {
+  @media (max-width: 1023px) {
     .page-header {
       position: relative;
       width: 100%;
@@ -597,7 +636,7 @@ form fieldset .input-text {
             transition: none; }
           .page-header .navigation > ul > li.active > a + ul + .subnav-opener i.fa-chevron-down:before {
             content: "\f077"; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) {
     .page-header .navigation > ul > li > a + ul {
       display: flex !important; } }
 
@@ -672,7 +711,7 @@ form fieldset .input-text {
   .quick-nav .nav-info + .nav-status {
     width: 50%;
     height: 80px; }
-  @media (max-width: 1199px) {
+  @media (max-width: 1023px) {
     .quick-nav {
       position: fixed;
       width: 100%;
@@ -693,10 +732,10 @@ form fieldset .input-text {
     .quick-nav .nav-info, .quick-nav .nav-contact, .quick-nav .nav-status {
       font-size: 10px; } }
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .page-information .quick-nav .nav-info, .page-information .quick-nav .nav-contact {
     width: 50%; } }
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   body.page-contact .quick-nav .nav-info, body.page-contact .quick-nav .nav-status {
     width: 50%;
     height: 50px; } }
@@ -743,7 +782,7 @@ form fieldset .input-text {
         max-width: 150px;
         display: inline-block; } }
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   body.nav-open .overlay {
     opacity: 1;
     visibility: visible; }
@@ -1406,7 +1445,8 @@ section {
         padding: 60px 100px 0 35px;
         width: auto;
         font-size: 24px;
-        margin-bottom: 35px; }
+        margin-bottom: 35px;
+        margin-top: -85px; }
         .sec-aboutus .sec-title > * {
           position: relative;
           top: -20px; } }
@@ -1492,12 +1532,10 @@ section {
     left: 0;
     right: 100%;
     bottom: 0;
-    border-bottom: 1px solid #fe6297;
+    border-bottom: 1px solid #333;
     transition: all .5s ease; }
   .sec-news .news-item > a:hover:after {
     right: 0; }
-  .sec-news .news-item > a:hover .news-title {
-    color: #fe6297; }
 @media (max-width: 767px) {
   .sec-news .news-item .news-label {
     font-size: 9px;
@@ -1746,7 +1784,7 @@ section {
   padding: 85px 0 100px; }
   @media (max-width: 767px) {
     .sec-information {
-      padding: 50px 30px 70px; } }
+      padding: 50px 0 70px; } }
   @media (min-width: 1500px) {
     .sec-information .sec-inner {
       width: 1470px; } }
@@ -2019,7 +2057,7 @@ section {
       margin-bottom: 10px; } }
   .sec-contact-form p a, .sec-contact-confirm p a {
     color: #fe6297;
-    text-decoration: underline; }
+    text-decoration: underline !important; }
 .sec-contact-form #contact_us_form, .sec-contact-confirm #contact_us_form {
   margin-top: 80px; }
   @media (max-width: 767px) {
@@ -2128,6 +2166,9 @@ section {
         line-height: 20px; } }
   .sec-information-detail .availability-item .item-title {
     text-align: center; }
+    @media (max-width: 991px) {
+      .sec-information-detail .availability-item .item-title {
+        padding-bottom: 10px; } }
     .sec-information-detail .availability-item .item-title > h3 {
       font-size: 20px;
       font-weight: 600;
@@ -2141,7 +2182,7 @@ section {
     width: 100%;
     font-size: 18px;
     text-align: center;
-    border-top: 1px solid #eeefe7;
+    border-top: 1px solid #ccc;
     line-height: 2;
     margin-bottom: 20px;
     font-weight: 700; }
@@ -2149,7 +2190,7 @@ section {
       .sec-information-detail .availability-item .item-schedule table {
         font-size: 12px; } }
     .sec-information-detail .availability-item .item-schedule table tr td {
-      border-bottom: 1px solid #eeefe7; }
+      border-bottom: 1px solid #ccc; }
   .sec-information-detail .availability-item .item-schedule .schedule-explain {
     font-size: 14px;
     line-height: 1.6;
@@ -2169,11 +2210,13 @@ section {
       .sec-information-detail .availability-item .item-schedule .schedule-contact {
         font-size: 14px; } }
   .sec-information-detail .availability-item .item-detail {
-    border-top: 1px solid #eeefe7;
+    border-top: 1px solid #ccc;
     padding-top: 20px; }
     @media (max-width: 767px) {
       .sec-information-detail .availability-item .item-detail {
-        padding-top: 12px; } }
+        padding-top: 23px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc; } }
     .sec-information-detail .availability-item .item-detail table {
       width: 100%;
       font-size: 18px;
@@ -2292,8 +2335,15 @@ section {
       border-right: 1px solid #ccc; }
     .sec-information-detail #detail1 .row > .col-lg-4, .sec-information-detail #detail1_1 .row > .col-lg-4 {
       padding-left: 60px; } }
+  @media (max-width: 991px) {
+    .sec-information-detail #detail1, .sec-information-detail #detail1_1 {
+      margin-bottom: 40px; } }
   .sec-information-detail #detail1 .availability-item, .sec-information-detail #detail1_1 .availability-item {
     border-top: 1px solid #ccc; }
+    @media (max-width: 767px) {
+      .sec-information-detail #detail1 .availability-item, .sec-information-detail #detail1_1 .availability-item {
+        padding-left: 0;
+        padding-right: 0; } }
     .sec-information-detail #detail1 .availability-item .item-title > h3, .sec-information-detail #detail1_1 .availability-item .item-title > h3 {
       font-size: 18px; }
       @media (max-width: 767px) {
@@ -2411,6 +2461,9 @@ body.page-news .sec-news .news-detail {
   margin: 70px 0 30px;
   padding: 30px 0;
   border-bottom: 1px solid #eee; }
+  @media (max-width: 991px) {
+    body.page-news .sec-news .news-detail {
+      margin-top: 0; } }
   body.page-news .sec-news .news-detail .news-label {
     display: inline-block;
     line-height: 30px;
@@ -2538,7 +2591,7 @@ body.page-news .sec-news .news-detail-toolbar {
       .sec-policy .sec-aboutus .sec-row:before {
         content: 'Vision';
         display: block;
-        font-size: 180px;
+        font-size: 160px;
         color: #fff;
         position: absolute;
         right: 0;
@@ -2554,13 +2607,13 @@ body.page-news .sec-news .news-detail-toolbar {
       .sec-policy .sec-aboutus .sec-row h4 {
         font-size: 24px;
         font-weight: 700;
-        margin-bottom: 10px; }
+        margin-bottom: 13px; }
         @media (max-width: 991px) {
           .sec-policy .sec-aboutus .sec-row h4 {
             font-size: 16px; } }
       .sec-policy .sec-aboutus .sec-row h5 {
         font-size: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 22px;
         font-family: aktiv-grotesk, sans-serif; }
         @media (max-width: 991px) {
           .sec-policy .sec-aboutus .sec-row h5 {
@@ -2652,6 +2705,19 @@ body.page-news .sec-news .news-detail-toolbar {
     @media (max-width: 991px) {
       .page-policy .sec-mission + .sec-aboutus h4 {
         font-size: 16px; } }
+.page-policy .sec-policy .sec-aboutus .sec-row {
+  padding-top: 80px;
+  align-items: flex-start; }
+  .page-policy .sec-policy .sec-aboutus .sec-row .sec-left {
+    background-position: left 45px;
+    padding-top: 30px; }
+  .page-policy .sec-policy .sec-aboutus .sec-row .sec-right {
+    padding-top: 0;
+    padding-bottom: 80px; }
+  .page-policy .sec-policy .sec-aboutus .sec-row .policy-vision {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 1.6; }
 
 .page-company-profile .sec-company-profile {
   padding-top: 250px; }
@@ -2906,5 +2972,16 @@ ul.news-tabs.custom-tab {
 
 body.page-contact fieldset .input-text .input-text-data {
   margin: 25px 0; }
+
+body.page-news-post .page-title {
+  text-align: left;
+  padding-bottom: 0; }
+  body.page-news-post .page-title:before {
+    display: none; }
+
+@media (max-width: 991px) {
+  body.page-index .sec-information {
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

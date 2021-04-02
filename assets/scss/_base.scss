@@ -57,7 +57,7 @@ ul {
     padding-left: 250px;
     overflow-x: hidden;
 
-    @media (max-width: 1199px) {
+    @media (max-width: 1023px) {
         padding-left: 0;
     }
 }
@@ -82,4 +82,8 @@ ul {
 
 .c-theme {
     color: #fe0459;
+}
+
+.compensate-for-scrollbar {
+    margin-right: 0 !important;
 }
